@@ -10,5 +10,18 @@
     "options_ui": {
         "page": "settings.html",
         "open_in_tab": true
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{6d8d646d-e5f0-4c4d-b2d4-3abdda247623}",
+            "strict_min_version": "113.0"
+        }
+    },
+    "icons": {
+        "32": "icon.svg",
+        "48": "icon.svg",
+        "64": "icon.svg",
+        "96": "icon.svg",
+        "128": "icon.svg"
     }
 }
