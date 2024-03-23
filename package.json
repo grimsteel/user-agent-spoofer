@@ -4,7 +4,8 @@
     "setup-user-agents": "gunzip node_modules/user-agents/src/user-agents.json.gz && node setup-user-agents.js",
     "build:js": "esbuild src/settings.ts --bundle --outdir=dist --format=esm --target=firefox100 --minify",
     "build:static": "cp static/* dist/",
-    "build": "npm run build:js && npm run build:static"
+    "build": "npm run build:js && npm run build:static",
+    "package": "zip -j extension.zip dist/*"
   },
   "internal": true,
   "devDependencies": {
