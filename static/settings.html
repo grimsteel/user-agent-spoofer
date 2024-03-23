@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Settings - User Agent Spoofer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+      #table-rules tbody:empty::after {
+        content: "No rules yet";
+        font-style: italic;
+      }
+
+      #dialog-add-rule input {
+        min-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <hr/>
+    <h3>Rules:</h3>
+    <table id="table-rules">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>URL Filter</th>
+          <th>User Agent</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button id="btn-add-rule" type="button">Add Rule</button>
+
+    <dialog id="dialog-add-rule">
+      <header>Add a Rule</header>
+      <form method="dialog">
+        <label for="input-name">Name (can be anything)</label>
+        <input type="text" id="input-name" required />
+        <label for="input-url-filter">URL Filter</label>
+        <input type="text" id="input-url-filter" required />
+        <label for="input-user-agent">User Agent</label>
+        <input type="text" id="input-user-agent" required />
+
+        <details>
+          <summary>Generate User Agent</summary>
+          <label for="input-filter">Regex Filter</label>
+          <input type="text" id="input-filter" />
+          <button type="button" id="btn-generate-user-agent">Generate</button>
+        </details>
+
+        <button type="submit">Done</button>
+      </form>
+    </dialog>
+
+    <script src="settings.js" type="module"></script>
+  </body>
+</html>
+

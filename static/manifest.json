@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "User Agent Spoofer",
+    "description": "Advanced, modern user agent spoofer",
+    "version": "1",
+    "permissions": ["declarativeNetRequestWithHostAccess", "storage"],
+    "optional_permissions": [
+        "<all_urls>"
+    ],
+    "options_ui": {
+        "page": "settings.html",
+        "open_in_tab": true
+    }
+}
